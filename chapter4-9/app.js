@@ -240,11 +240,11 @@
 //?1=== Q 6 ===
 
 // var sub1 = prompt("Enter Subject 1");
-// var obtainMarks1 = prompt("Enter Subject 1 obtain marks");
+// var obtainMarks1 = +prompt("Enter Subject 1 obtain marks");
 // var sub2 = prompt("Enter Subject 2");
-// var obtainMarks2 = prompt("Enter Subject 2 obtain marks");
+// var obtainMarks2 = +prompt("Enter Subject 2 obtain marks");
 // var sub3 = prompt("Enter Subject 3");
-// var obtainMarks3 = prompt("Enter Subject 3 obtain marks");
+// var obtainMarks3 = +prompt("Enter Subject 3 obtain marks");
 // var totalMarks = 100;
 
 // var per1 = (obtainMarks1 / totalMarks) * 100;
@@ -256,5 +256,5 @@
 // document.write(`${sub1} ${totalMarks}   ${obtainMarks1} ${Math.round(
 //   per1
 // )}% <br>
-// ${sub2} ${totalMarks}   ${obtainMarks2} ${Math.round(per2)}% <br>
-// ${sub3} ${totalMarks}   ${obtainMarks3} ${Math.round(per3)}% <br>`);
+//     ${sub2} ${totalMarks}   ${obtainMarks2} ${Math.round(per2)}% <br>
+//     ${sub3} ${totalMarks}   ${obtainMarks3} ${Math.round(per3)}% <br>`);
