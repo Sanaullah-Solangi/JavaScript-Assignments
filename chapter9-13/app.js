@@ -171,9 +171,16 @@
 
 //*=========== Chapter 12-13 ===========
 
-//!=== Q 1 ===
-// I dont understand how to do this
+//?=== Q 1 ===
 
+// var input = prompt("Enter Your Value").charCodeAt();
+// if (input >= 0 && input <= 57) {
+//   console.log("this is number");
+// } else if (input >= 65 && input <= 90) {
+//   console.log("this is uppercase");
+// } else if (input >= 97 && input <= 122) {
+//   console.log("this is lowecase");
+// }
 //?=== Q 2 ===
 
 // var num1 = +prompt("Enter the integer 1");
@@ -196,7 +203,7 @@
 //   document.write("The number is zero");
 // }
 
-//?=== Q 3 ===
+//?=== Q 4 ===
 // var greeting;
 // var hour = +prompt("Enter hours");
 // if (hour < 18) {
