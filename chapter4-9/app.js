@@ -108,6 +108,7 @@
 
 //!=== Q 6 ===
 
+// The Temperature Converter:
 // I can not solve this question.
 
 //?=== Q 7 ===
@@ -153,12 +154,13 @@
 
 //?=== Q 10 ===
 
-// var num = 2;
+// var num = +prompt("Enter any number");
 
-// var sum = num + (5 * 10) / 2;
-// document.write(sum);
+// var result = ((num + 5) * 10) / 2;
 
-//?=== Q 10 ===
+// document.write(result);
+
+//?=== Q 11 ===
 
 // var currentYear = 2023;
 
@@ -168,21 +170,34 @@
 
 // document.write("your Age is " + currentAge);
 
-//!=== Q 10 ===
+//?=== Q 13 ===
 
-//  I dont understand how to get the circumferences of any radius
+// var favorateSnack = prompt("Enter snacks");
 
-//!=== Q 11 ===
+// var currentAge = +prompt("Enter your current age");
 
-// var favorateSnack = "badam";
+// var maximumAge = +prompt("Enter your maximum age");
 
-// var currentAge = 23;
+// var amountPerDay = +prompt("Enter amount of snacks per day");
 
-// var maximumAge = 60;
+// document.write("favorate Snacks " + favorateSnack + "<br>");
+// document.write("current age " + currentAge + "<br>");
+// document.write("maximum Age " + maximumAge + "<br>");
+// document.write("amount per day " + amountPerDay + "<br>");
 
-// var amountPerDay = 10;
+// var yearsRemaining = maximumAge - currentAge;
+// var daysRemaining = yearsRemaining * 365;
+// var snacksNeeded = amountPerDay * daysRemaining;
 
-// samajh nhi aai kese hoga
+// document.write(
+//   "you will need " +
+//     snacksNeeded +
+//     " " +
+//     favorateSnack +
+//     " " +
+//     " to last you until the ripe old age of " +
+//     maximumAge
+// );
 
 //*=========== Chapter 5-9 ===========
 
