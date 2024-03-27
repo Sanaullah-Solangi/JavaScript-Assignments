@@ -171,3 +171,99 @@
 //!=== Q 15 ===
 
 // ye 3nu samjh nhi aae
+
+//? loop flag practice
+// var input = prompt();
+// var friends = ["sanaullah", "jamal", "kamran", "atif"];
+// var flag = false;
+
+// for (var i = 0; i < friends.length; i++) {
+//   if (friends[i] == input) {
+//     flag = true;
+//   }
+// }
+
+// if (flag) {
+//   document.write("we are firnds");
+// } else {
+//   document.write("no we are not");
+// }
+
+//! class 19/3/24 tuesday
+//? task one
+// var input = +prompt();
+// var leng = +prompt();
+
+// for (var i = 1; i <= leng; i++) {
+//   document.write(input + " X " + i + " = " + input * i + "<br>");
+// }
+
+//? task two
+// for (var i = 1; i < 50; i = i + 2) {
+//   document.write(i + "<br>");
+// }
+
+//? task three
+// for (var i = 1; i <= 50; i++) {
+//   if (i % 2 == 0) {
+//     document.write(i + "<br>");
+//   }
+// }
+
+//? task three
+// for (var i = 1; i <= 100; i = i + 10) {
+//   document.write(i + "<br>");
+// }
+
+//? task four
+// for (var i = 10; i > 0; i--) {
+//   document.write(i + "<br>");
+// }
+
+//? min max number searching;
+// var numbers = [2, 3, 5, 8, 1, 19];
+// var min = numbers[5];
+// for (var i = 0; i < numbers.length; i++) {
+//   if (numbers[i] < min) {
+//     min = numbers[i];
+//   }
+// }
+
+// document.write(min + "<br>");
+
+//? changin places
+// var arr = ["sanaullah", "jamal", "kamran"];
+// document.write(arr + "<br>");
+
+// var firstIndex = arr[0];
+// var lastIndex = arr[2];
+
+// arr[2] = firstIndex;
+// arr[0] = lastIndex;
+// document.write(arr);
+
+//! class 21/3/24 thursday
+//? searching cars
+// var cars = ["Mehran", "Audi", "fx", "civic", "dala", "alto"];
+// var user = prompt("Enter your car").toLowerCase();
+// var flag = false;
+
+// for (var i = 0; i < cars.length; i++) {
+//   if (user == cars[i].toLowerCase()) {
+//     flag = true;
+//   }
+// }
+
+// if (flag) {
+//   document.write(`${user} is found`);
+// } else {
+//   document.write(`${user} is not found`);
+// }
+
+//? nested loop for print 1 to 100
+// for (var i = 1; i <= 100; i = i + 10) {
+//   for (var j = i; j < i + 10; j++) {
+//     document.write(j + " ");
+//   }
+//   document.write("<br>");
+// }
