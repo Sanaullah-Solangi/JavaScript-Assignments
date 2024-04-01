@@ -97,7 +97,7 @@ var text =
 // if (index !== -1) {
 //   text = text.slice(0, index) + "JavaScript" + text.slice(index + user.length);
 // }
-document.write(`${text} <br>`);
+//todo document.write(`${text} <br>`);
 
 //! 26 / 3 / 23 tuesday
 
@@ -162,3 +162,123 @@ document.write(`${text} <br>`);
 //   }
 //   document.write(`the factorial of <b>${input}</b> is <b>${fac}</b>`);
 // }
+
+//! 28 / 3 / 23 thursday : searching value
+// var cars = ["Alto", "Civic", "Toyota", "Mehran"];
+// var userInp = prompt("Enter car name");
+// var firstChar = userInp.slice(0, 1).toUpperCase();
+// var remainChar = userInp.slice(1).toLowerCase();
+// var final = firstChar + remainChar;
+// var index = cars.indexOf(final);
+
+//* loop method
+
+// var flag = false;
+// for (var i = 0; i < userInp.length; i++) {
+//   if (cars[i] == final) {
+//     flag = true;
+//     document.write(`yes ${cars[i]} is available at index ${i} in our showroom`);
+//     break;
+//   }
+// }
+
+// if (flag == false) {
+//   document.write("sorry we do not have this item");
+// }
+
+//* if method
+
+// if (index != -1 && cars[index] == final) {
+//   document.write(`yes ${final} is available at index ${index} in our showroom`);
+// } else {
+//   document.write("sorry we do not have this item");
+// }
+
+// document.write("<br>" + index);
+
+//* passworred generator
+var btn = document.querySelector(".btn");
+var passworred = document.querySelector(".passworred");
+
+function generatePassworred() {
+  var str = "WPA-";
+  var num = Math.random() * 100000;
+  passworred.innerHTML = str + Math.floor(num);
+}
+// var str = "WPA-";
+// var num = Math.random() * 100000;
+// document.write(str + Math.floor(num));
+
+btn.addEventListener("click", () => {
+  generatePassworred();
+});
+console.log(passworred);
+
+//! 30 / 3 / 23 saturday : date method
+
+//* 1st task
+
+// var days = [
+//   "sunday",
+//   "monday",
+//   "tuesday",
+//   "wednesday",
+//   "thursday",
+//   "friday",
+//   "saturday",
+// ];
+
+// var todaysDay = new Date().getDay();
+// document.write(days[todaysDay] + "<br>");
+
+//* 2nd task
+
+// var dob = new Date(prompt("Enter your Dob(5 Jan, 2000)"));
+// var todaysDate = new Date().getTime();
+// var currentDate = todaysDate - dob;
+// var convertAge = currentDate / (1000 * 60 * 60 * 24 * 365);
+// document.write(Math.floor(convertAge));
+
+//* 3rd task
+
+// var eid = new Date("16 june 2024");
+// var currentDate = new Date();
+// var timeDifference = eid - currentDate;
+// var remaingDays = timeDifference / (1000 * 60 * 60*24);
+// document.write(Math.floor(remaingDays));
+
+//* 4th task
+
+// var months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+
+// var customerName = prompt("Enter Your Name");
+// var currentMonth = new Date().getMonth();
+// var numberOfUnits = +prompt("Enter Your units");
+// var chargesPerUnit = 14;
+// var netAmountPayable = chargesPerUnit * numberOfUnits;
+// var latePaymentSurcharge = 500;
+// var grossAmountPayable = netAmountPayable + latePaymentSurcharge;
+
+// document.write(`
+// Customer Name: ${customerName} <br>
+// Current Month: ${months[currentMonth]} <br>
+// Number of Units: ${numberOfUnits} <br>
+// Charges per Unit: ${chargesPerUnit.toFixed(2)} <br><br>
+// Net Amount Payable(Within Due Date): ${netAmountPayable.toFixed(2)} <br>
+// Late Payment Surcharges: ${latePaymentSurcharge} <br>
+// Gross Amount Payable(After Due Date): ${grossAmountPayable.toFixed(2)} <br>
+
+// `);
