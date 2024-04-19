@@ -139,20 +139,20 @@
 //* Where,
 //* Net Amount Payable (within Due Date) = Number of units * Charges per unit & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge
 
-var customerName = prompt("Enter Your Name");
-var customerMonth = prompt("Enter Your Month");
-var numberOfUnits = prompt("Enter Your units");
-var chargesPerUnit = 18;
-var netAmount = chargesPerUnit * numberOfUnits;
-var latePaymentCharges = 500;
-var grossAmount = netAmount + latePaymentCharges;
+// var customerName = prompt("Enter Your Name");
+// var customerMonth = prompt("Enter Your Month");
+// var numberOfUnits = prompt("Enter Your units");
+// var chargesPerUnit = 18;
+// var netAmount = chargesPerUnit * numberOfUnits;
+// var latePaymentCharges = 500;
+// var grossAmount = netAmount + latePaymentCharges;
 
-document.write(`
-Customer Name: ${customerName} <br>
-Customer Month: ${customerMonth} <br>
-Number of Units: ${numberOfUnits} <br><br>
-Charges Per Unit: ${chargesPerUnit} <br>
-Net Amount: ${netAmount}<br>
-late Payment Charges: ${latePaymentCharges}<br>
-gross Amount: ${grossAmount}<br>
-`);
+// document.write(`
+// Customer Name: ${customerName} <br>
+// Customer Month: ${customerMonth} <br>
+// Number of Units: ${numberOfUnits} <br><br>
+// Charges Per Unit: ${chargesPerUnit} <br>
+// Net Amount: ${netAmount}<br>
+// late Payment Charges: ${latePaymentCharges}<br>
+// gross Amount: ${grossAmount}<br>
+// `);

@@ -1,4 +1,4 @@
-//! 12 / 3 / 23 saturday
+//! 12 / 3 / 24 saturday
 
 // var inputNum = +prompt("Enter any number");
 
@@ -12,7 +12,7 @@
 //   document.write("enter valid number");
 // }
 
-//! 14 / 3 / 23 saturday
+//! 14 / 3 / 24 saturday
 
 // var studentName = prompt("Enter studnent Name");
 // var eng = +prompt("Enter eng marks");
@@ -64,7 +64,7 @@
 //   </tr>
 // </table>`);
 
-//! 16 / 3 / 23 saturday
+//! 16 / 3 / 24 saturday
 
 // var arr = ["audi", "volvo", "ford", "toyota"];
 
@@ -99,7 +99,7 @@ var text =
 // }
 //todo document.write(`${text} <br>`);
 
-//! 26 / 3 / 23 tuesday
+//! 26 / 3 / 24 tuesday
 
 //* task 1
 
@@ -137,7 +137,7 @@ var text =
 //   document.write("<br>");
 // }
 
-//* task 5
+//* task 5 Palindrom word
 
 // var input = prompt("Enter any value");
 // var msg = "ye palindrom hai";
@@ -148,7 +148,7 @@ var text =
 // }
 // document.write(msg);
 
-//* task 6
+//* task 6 factorial
 
 // var input = +prompt("Enter any number");
 // var fac = 1;
@@ -163,7 +163,8 @@ var text =
 //   document.write(`the factorial of <b>${input}</b> is <b>${fac}</b>`);
 // }
 
-//! 28 / 3 / 23 thursday : searching value
+//! 28 / 3 / 24 thursday : searching value
+
 // var cars = ["Alto", "Civic", "Toyota", "Mehran"];
 // var userInp = prompt("Enter car name");
 // var firstChar = userInp.slice(0, 1).toUpperCase();
@@ -197,24 +198,21 @@ var text =
 // document.write("<br>" + index);
 
 //* passworred generator
-var btn = document.querySelector(".btn");
-var passworred = document.querySelector(".passworred");
+// var btn = document.querySelector(".btn");
+// var passworred = document.querySelector(".passworred");
 
-function generatePassworred() {
-  var str = "WPA-";
-  var num = Math.random() * 100000;
-  passworred.innerHTML = str + Math.floor(num);
-}
-// var str = "WPA-";
-// var num = Math.random() * 100000;
-// document.write(str + Math.floor(num));
+// function generatePassworred() {
+//   var str = "WPA-";
+//   var num = Math.random() * 100000;
+//   passworred.innerHTML = str + Math.floor(num);
+// }
 
-btn.addEventListener("click", () => {
-  generatePassworred();
-});
-console.log(passworred);
+// btn.addEventListener("click", () => {
+//   generatePassworred();
+// });
+// console.log(passworred);
 
-//! 30 / 3 / 23 saturday : date method
+//! 30 / 3 / 24 saturday : date method
 
 //* 1st task
 
@@ -282,3 +280,23 @@ console.log(passworred);
 // Gross Amount Payable(After Due Date): ${grossAmountPayable.toFixed(2)} <br>
 
 // `);
+
+//! 18 / 4 / 24 thursday after \\ second class of revesion after eid
+
+//* Palindrom word
+
+// var userInput = prompt("please enter any word for check it`s palandrom or not");
+// var revIndex = userInput.length - 1;
+// var revString = "";
+// for (var i = userInput.length - 1; i >= 0; i--) {
+//   revString += userInput[i];
+// }
+// document.write(
+//   `This is your Input ${userInput} <br> And This is it's reverse spelling ${revString} <br>`
+// );
+
+// if (userInput == revString) {
+//   document.write("Yes it's a palindrom word");
+// } else {
+//   document.write("No it's not a palindrom word");
+// }

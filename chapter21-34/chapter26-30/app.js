@@ -65,6 +65,19 @@
 //* c. 50.2kgs
 //* d. 50.2kilograms
 
+
+var userInput = prompt("Enter your weight (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms)");
+
+// Remove any non-numeric characters except decimal point
+var weight = parseFloat(userInput.replace(/[^\d.]/g, ''));
+
+// Check if 'kgs' or 'kilograms' is mentioned in the input
+if (userInput.includes("kgs") || userInput.includes("kilograms")) {
+    document.write("Your weight is " + weight + " kilograms.");
+} else {
+    document.write("Your weight is " + weight + " pounds.");
+}
+
 //! ye bhi nhi aata
 
 //* 8. Write a program that stores a random secret number from 1 to 10 in a variable. Ask the user to input a number between 1 and 10. If the user input equals the secret number, congratulate the user.
@@ -79,3 +92,6 @@
 // } else {
 //   document.write(`We are sorry ${userInput} is not the secret number`);
 // }
+
+
+
