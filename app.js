@@ -217,23 +217,28 @@ var output = document.querySelector(".output");
 // });
 
 //* Passwored with no Sequence
-// var ranValue =
-//   "!@#$%^&*()_+-={}[];:',.<>/?|0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-// var btn = document.querySelector(".passworedBtn");
+var ranValue =
+  "!@#$%^&*()_+-={}[];:',.<>/?|0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var btn = document.querySelector(".passworedBtn");
+var lenInput = document.querySelector(".length");
+var len = "";
+function getLen() {
+  len = lenInput.value;
+  lenInput.value = "";
+}
+function generatePasswored() {
+  ranPasswored = "";
+  for (var i = 1; i <= len; i++) {
+    ranIndex = Math.floor(Math.random() * ranValue.length);
+    ranPasswored += ranValue[ranIndex];
+  }
+}
+btn.addEventListener("click", () => {
+  generatePasswored();
+  output.innerHTML = ranPasswored;
+});
 
-// function generatePasswored() {
-//   ranPasswored = "";
-//   for (var i = 0; i <= 10; i++) {
-//     ranIndex = Math.floor(Math.random() * ranValue.length);
-//     ranPasswored += ranValue[ranIndex];
-//   }
-// }
-// btn.addEventListener("click", () => {
-//   generatePasswored();
-//   output.innerHTML = ranPasswored;
-// });
-
-// document.write(ranPasswored)
+// document.write(ranPasswored);
 
 //* Passwored with Sequence
 
@@ -489,3 +494,58 @@ var output = document.querySelector(".output");
 //   result += char;
 // }
 // console.log(result);
+
+//! 5 / May / 24; thursday after \\ revesion after eid \\ capitalization of first letter of each word by for loops
+
+//* head tell game
+
+// var player1 = prompt("player1 want head or tells");
+// var player2 = "";
+// var toss = Math.ceil(Math.random() * 2);
+// console.log(toss);
+// if (player1 == "head") {
+//   player2 = "tells";
+// } else {
+//   player2 = "head";
+// }
+// if (toss == 1) {
+//   console.log("player1 wins");
+// } else {
+//   console.log("player2 wins");
+// }
+
+//* password generator
+
+// var ranValue =
+//   "!@#$%^&*()_+-={}[];:',.<>/?|0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// var len = +prompt("Enter length");
+// for (var i = 0; i <= len; i++) {
+//   document.write(ranValue[Math.floor(Math.random() * ranValue.length - 1)]);
+// }
+// console.log(len);
+// console.log(ranValue.length);
+
+//! self practice
+//* anagrame
+var firstWord = document.querySelector(".firstWord");
+var secondWord = document.querySelector(".secondWord");
+var output = document.querySelector(".output");
+var temp = "";
+function compareValues() {
+  for (var i = 0; i < firstWord.value.length; i++) {
+    for (var j = 0; j < secondWord.value.length; j++) {
+      if (firstWord.value[i] == secondWord.value[j]) {
+        temp += secondWord.value[j];
+        break;
+      }
+    }
+  }
+  if (firstWord.value == temp) {
+    output.innerHTML = `<b>${firstWord.value}</b> and <b>${secondWord.value}</b> are anagrams`;
+  } else {
+    output.innerHTML = `<b>${firstWord.value}</b> and <b>${secondWord.value}</b> are not anagrams`;
+  }
+  firstWord.value = "";
+  secondWord.value = "";
+  temp = "";
+}

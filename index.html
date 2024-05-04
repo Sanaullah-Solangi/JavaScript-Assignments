@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- <button class="IDbtn">generate Id</button>
-    <button class="passworedBtn">generate passwored</button>
-    <p class="output"></p> -->
+    <div class="btns">
+      <button onclick="getLen()">give length</button>
+      <button class="IDbtn">generate Id</button>
+      <button class="passworedBtn">generate passwored</button>
+    </div>
+    <br />
+    <input type="text" name="" class="length" /> <br />
 
- 
+    <input type="text" class="firstWord" placeholder="Enter first word" />
+    <br />
+    <input type="text" class="secondWord" placeholder="Enter second word" />
+    <button class="btn" onclick="compareValues()">compare</button> <br />
+    <p class="output"></p>
     <script src="./app.js"></script>
   </body>
 </html>
