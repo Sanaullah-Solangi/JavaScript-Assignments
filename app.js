@@ -217,26 +217,26 @@ var output = document.querySelector(".output");
 // });
 
 //* Passwored with no Sequence
-var ranValue =
-  "!@#$%^&*()_+-={}[];:',.<>/?|0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var btn = document.querySelector(".passworedBtn");
-var lenInput = document.querySelector(".length");
-var len = "";
-function getLen() {
-  len = lenInput.value;
-  lenInput.value = "";
-}
-function generatePasswored() {
-  ranPasswored = "";
-  for (var i = 1; i <= len; i++) {
-    ranIndex = Math.floor(Math.random() * ranValue.length);
-    ranPasswored += ranValue[ranIndex];
-  }
-}
-btn.addEventListener("click", () => {
-  generatePasswored();
-  output.innerHTML = ranPasswored;
-});
+// var ranValue =
+//   "!@#$%^&*()_+-={}[];:',.<>/?|0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// var btn = document.querySelector(".passworedBtn");
+// var lenInput = document.querySelector(".length");
+// var len = "";
+// function getLen() {
+//   len = lenInput.value;
+//   lenInput.value = "";
+// }
+// function generatePasswored() {
+//   ranPasswored = "";
+//   for (var i = 1; i <= len; i++) {
+//     ranIndex = Math.floor(Math.random() * ranValue.length);
+//     ranPasswored += ranValue[ranIndex];
+//   }
+// }
+// btn.addEventListener("click", () => {
+//   generatePasswored();
+//   output.innerHTML = ranPasswored;
+// });
 
 // document.write(ranPasswored);
 
@@ -525,27 +525,35 @@ btn.addEventListener("click", () => {
 // console.log(len);
 // console.log(ranValue.length);
 
+//! 9 / May / 24 - saturday after \\ revesion after eid \\
+
+//* age calculator
+
+
+
 //! self practice
 //* anagrame
-var firstWord = document.querySelector(".firstWord");
-var secondWord = document.querySelector(".secondWord");
-var output = document.querySelector(".output");
-var temp = "";
-function compareValues() {
-  for (var i = 0; i < firstWord.value.length; i++) {
-    for (var j = 0; j < secondWord.value.length; j++) {
-      if (firstWord.value[i] == secondWord.value[j]) {
-        temp += secondWord.value[j];
-        break;
-      }
-    }
-  }
-  if (firstWord.value == temp) {
-    output.innerHTML = `<b>${firstWord.value}</b> and <b>${secondWord.value}</b> are anagrams`;
-  } else {
-    output.innerHTML = `<b>${firstWord.value}</b> and <b>${secondWord.value}</b> are not anagrams`;
-  }
-  firstWord.value = "";
-  secondWord.value = "";
-  temp = "";
+{
+  // var firstWord = document.querySelector(".firstWord");
+  // var secondWord = document.querySelector(".secondWord");
+  // var output = document.querySelector(".output");
+  // var temp = "";
+  // function compareValues() {
+  //   for (var i = 0; i < firstWord.value.length; i++) {
+  //     for (var j = 0; j < secondWord.value.length; j++) {
+  //       if (firstWord.value[i] == secondWord.value[j]) {
+  //         temp += secondWord.value[j];
+  //         break;
+  //       }
+  //     }
+  //   }
+  //   if (firstWord.value == temp) {
+  //     output.innerHTML = `<b>${firstWord.value}</b> and <b>${secondWord.value}</b> are anagrams`;
+  //   } else {
+  //     output.innerHTML = `<b>${firstWord.value}</b> and <b>${secondWord.value}</b> are not anagrams`;
+  //   }
+  //   firstWord.value = "";
+  //   secondWord.value = "";
+  //   temp = "";
+  // }
 }
