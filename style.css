@@ -5,3 +5,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.navbar {
+  background-color: rgb(86, 0, 232);
+}
+.navbar-brand,
+.nav-link {
+  color: white;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 1rem;
+}
+.card {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: fit-content;
+  margin: 10px;
+  padding: 10px 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+select {
+  width: 200px;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+.btn {
+  background-color: white;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: white !important;
+}

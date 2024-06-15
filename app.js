@@ -529,31 +529,128 @@ var output = document.querySelector(".output");
 
 //* age calculator
 
-
-
 //! self practice
 //* anagrame
-{
-  // var firstWord = document.querySelector(".firstWord");
-  // var secondWord = document.querySelector(".secondWord");
-  // var output = document.querySelector(".output");
-  // var temp = "";
-  // function compareValues() {
-  //   for (var i = 0; i < firstWord.value.length; i++) {
-  //     for (var j = 0; j < secondWord.value.length; j++) {
-  //       if (firstWord.value[i] == secondWord.value[j]) {
-  //         temp += secondWord.value[j];
-  //         break;
-  //       }
-  //     }
-  //   }
-  //   if (firstWord.value == temp) {
-  //     output.innerHTML = `<b>${firstWord.value}</b> and <b>${secondWord.value}</b> are anagrams`;
-  //   } else {
-  //     output.innerHTML = `<b>${firstWord.value}</b> and <b>${secondWord.value}</b> are not anagrams`;
-  //   }
-  //   firstWord.value = "";
-  //   secondWord.value = "";
-  //   temp = "";
-  // }
-}
+// {
+// var firstWord = document.querySelector(".firstWord");
+// var secondWord = document.querySelector(".secondWord");
+// var output = document.querySelector(".output");
+// var temp = "";
+// function compareValues() {
+//   for (var i = 0; i < firstWord.value.length; i++) {
+//     for (var j = 0; j < secondWord.value.length; j++) {
+//       if (firstWord.value[i] == secondWord.value[j]) {
+//         temp += secondWord.value[j];
+//         break;
+//       }
+//     }
+//   }
+//   if (firstWord.value == temp) {
+//     output.innerHTML = `<b>${firstWord.value}</b> and <b>${secondWord.value}</b> are anagrams`;
+//   } else {
+//     output.innerHTML = `<b>${firstWord.value}</b> and <b>${secondWord.value}</b> are not anagrams`;
+//   }
+//   firstWord.value = "";
+//   secondWord.value = "";
+//   temp = "";
+// }c
+// }
+//! 25 / May / 24 - saturday
+//*==== BALANCE BARACKETS =====
+// var str = "({[]})";
+// var arr = [];
+
+// function checkBalance() {
+//   for (var i = 0; i < str.length; i++) {
+//     if (str[i] == "(" || str[i] == "[" || str[i] == "{") {
+//       arr.push(str[i]);
+//     } else if (str[i] == ")") {
+//       if (arr[arr.length - 1] == "(") {
+//         arr.pop();
+//       } else {
+//         return false;
+//       }
+//     } else if (str[i] == "]") {
+//       if (arr[arr.length - 1] == "[") {
+//         arr.pop();
+//       } else {
+//         return false;
+//       }
+//     } else if (str[i] == "}") {
+//       if (arr[arr.length - 1] == "{") {
+//         arr.pop();
+//       } else {
+//         return false;
+//       }
+//     }
+//   }
+//   return arr.length == 0;
+// }
+// if (checkBalance()) {
+//   console.log("balance hai");
+// } else {
+//   console.log("balance nhi hai");
+// }
+//! practice of sending image
+// var img = document.querySelector("#img");
+// var file = document.querySelector("#file");
+// function uploadImg() {
+//   img.src = URL.createObjectURL(file.files[0]);
+// }
+
+//! DeBounce task
+// var temp;
+// function getInput(event) {
+//   clearTimeout(temp);
+//   temp = setTimeout(() => {
+//     console.log(event.target.value);
+//   }, 2000);
+// }
+
+//! self practice
+// var card = document.querySelector(".card");
+// var cardContainer = document.querySelector(".cardContainer");
+// var friends = {
+//   friend1: {
+//     name: "jamal",
+//     age: 26,
+//     friendShip: true,
+//     education: "metric",
+//     skills: ["bayan", "naat", "teaching"],
+//   },
+//   friend2: {
+//     name: "kamran",
+//     age: 25,
+//     friendShip: true,
+//     education: "engineer",
+//     skills: ["programming", "critical thinking", "teaching"],
+//   },
+//   friend3: {
+//     name: "atif",
+//     age: 28,
+//     friendShip: true,
+//     education: "alim",
+//     skills: ["business management", "enterprenuer", "business developer"],
+//   },
+// };
+// for (var friend in friends) {
+//   for (var details in friends[friend]) {
+//     var temp = friends[friend][details];
+//     if (Array.isArray(temp)) {
+//       var skillSet = "";
+//       for (var i = 0; i < temp.length; i++) {
+//         skillSet += temp[i] + " <br>";
+//       }
+//     }
+//   }
+//   var card = `
+//   <div class="card">
+//   <h1 class="name">${friends[friend].name}</h1>
+//   <p class="age">${friends[friend].age}</p>
+//   <p class="friendship">${friends[friend].friendShip}</p>
+//   <p class="education">${friends[friend].education}</p>
+//   <p class="skills">${skillSet}</p>
+//   </div>`;
+
+//   cardContainer.innerHTML += card;
+// }
