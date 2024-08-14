@@ -137,6 +137,7 @@ var text =
 //   document.write("<br>");
 // }
 
+Math;
 //* task 5 Palindrom word
 
 // var input = prompt("Enter any value");
@@ -531,10 +532,9 @@ var output = document.querySelector(".output");
 
 //! self practice
 //* anagrame
-// {
 // var firstWord = document.querySelector(".firstWord");
 // var secondWord = document.querySelector(".secondWord");
-// var output = document.querySelector(".output");
+// var output = document.querySelector(".outPut");
 // var temp = "";
 // function compareValues() {
 //   for (var i = 0; i < firstWord.value.length; i++) {
@@ -553,7 +553,6 @@ var output = document.querySelector(".output");
 //   firstWord.value = "";
 //   secondWord.value = "";
 //   temp = "";
-// }c
 // }
 //! 25 / May / 24 - saturday
 //*==== BALANCE BARACKETS =====
@@ -654,3 +653,23 @@ var output = document.querySelector(".output");
 
 //   cardContainer.innerHTML += card;
 // }
+
+//*==== FINAL TASK OF JAVASCRIPT =====
+let arr = ["bat", "tab", "cat", "pat", "tap"];
+let tempArr;
+let result = {};
+let finalResult = [];
+for (let i = 0; i < arr.length; i++) {
+  let key = arr[i].split("").sort().join("");
+  if (!result[key]) {
+    result[key] = [];
+  }
+  if (key == arr[i].split("").sort().join("")) {
+    result[key].push(arr[i]);
+  }
+}
+Object.values(result).forEach((obj) => {
+  finalResult.push(obj);
+});
+console.log(result);
+console.log(finalResult);
